@@ -1,0 +1,51 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ẩm Thực Hằng Nga - Admin</title>
+<style>
+body{font-family:Arial;background:#f3f4f6;margin:0;color:#333}
+header{background:#333;color:white;padding:20px}
+main{max-width:1000px;margin:30px auto;padding:15px}
+.box{background:white;padding:22px;border-radius:10px;margin-bottom:20px}
+input{width:100%;padding:12px;margin:8px 0;box-sizing:border-box}
+button{padding:10px 15px;background:#ff6b35;color:white;border:0;border-radius:5px;cursor:pointer}
+.order{background:#fff;border:1px solid #ddd;border-radius:8px;padding:18px;margin:15px 0}
+select{padding:9px;margin:8px}
+#dashboard{display:none}
+</style>
+</head>
+<body>
+
+<header>
+<h2>Ẩm Thực Hằng Nga - QUẢN TRỊ</h2>
+</header>
+
+<main>
+<section class="box" id="loginBox">
+<h2>Đăng nhập quản trị</h2>
+<input id="email" type="email" placeholder="Email quản trị">
+<input id="password" type="password" placeholder="Mật khẩu">
+<button id="loginButton">Đăng nhập</button>
+<p id="loginMessage"></p>
+</section>
+
+<section id="dashboard">
+<div class="box">
+<h2>Quản lý cửa hàng</h2>
+<p id="summary">Đang tải dữ liệu...</p>
+<button id="logoutButton">Đăng xuất</button>
+</div>
+
+<div class="box">
+<h2>Danh sách đơn hàng</h2>
+<div id="orders">Đang tải đơn hàng...</div>
+</div>
+</section>
+</main>
+
+<script type="module" src="admin.js"></script>
+</body>
+</html>
